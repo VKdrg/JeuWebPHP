@@ -10,9 +10,9 @@ class Game
     private int $food;
     private int $materials;
 
-    public function __construct( int $id_game, int $current_day, int $energy, int $health, int $food, int $materials)
+    public function __construct(int $id_game, int $current_day, int $energy, int $health, int $food, int $materials)
     {
-        $this->id_game = 1;
+        $this->id_game = $id_game;
         $this->current_day = $current_day;
         $this->energy = $energy;
         $this->health = $health;
